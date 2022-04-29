@@ -31,6 +31,22 @@ class Movie
     public function getRegista(): string {
         return $this->regista;
     }
+    public function setTitolo(string $titolo): object {
+        $this->titolo = $titolo;
+        return $this;
+    }
+    public function setGenere(string $genere): object {
+        $this->genere = $genere;
+        return $this;
+    }
+    public function setDurata(int $durata_secondi): object {
+        $this->durata_secondi = $durata_secondi;
+        return $this;
+    }
+    public function setRegista(string $regista): object {
+        $this->regista = $regista;
+        return $this;
+    }
 
     private function durata_ore(): float {
         $durata_ore = $this->durata_secondi / 3600;
