@@ -32,7 +32,7 @@ class Movie
         return $this->regista;
     }
 
-    public function durata_ore(): float {
+    private function durata_ore(): float {
         $durata_ore = $this->durata_secondi / 3600;
         return round($durata_ore, 2);
     }
